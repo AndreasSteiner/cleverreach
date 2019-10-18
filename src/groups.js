@@ -39,9 +39,9 @@ module.exports = function() {
 				uri: cleverreach.url + 'groups.json/' + id + '/filters/' + filterId + '/stats'
 			});
 		},
-		getReceivers: function(id) {
+		getReceivers: function(id, data) {			
 			return crRequest(cleverreach, {
-				uri: cleverreach.url + 'groups.json/' + id + '/receivers'
+				uri: cleverreach.url + 'groups.json/' + id + '/receivers?' + queryString.stringify(data)
 			});
 		},
 		getReceiver: function(id, receiverId) {
