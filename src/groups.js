@@ -94,12 +94,26 @@ module.exports = function() {
 				json: true
 			});
 		},
-		createReceiver: function(id, data) {
+		createReceiver: function(id, data) {			
 			return crRequest(cleverreach, {
 				method: 'POST',
 				uri: cleverreach.url + 'groups.json/' + id + '/receivers',
 				body: data,
 				json: true
+			});
+		},
+		createReceivers: function(id, data) {			
+			return crRequest(cleverreach, {
+				method: 'POST',
+				uri: cleverreach.url + 'groups.json/' + id + '/receivers/insert',
+				body: data,
+				json: true
+			});
+		},
+		deleteReceiver: function(groupId, receiverId) {
+			return crRequest(cleverreach, {
+				method: 'DELETE',
+				uri: cleverreach.url + 'groups.json/' + groupId + '/receivers/' + receiverId
 			});
 		},
 		delete: function(id) {

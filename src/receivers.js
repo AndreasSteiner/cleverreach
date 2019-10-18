@@ -23,6 +23,11 @@ module.exports = function() {
 			return crRequest(cleverreach, {
 				uri: cleverreach.url + 'receivers.json/' + id + '/attributes?' + queryString.stringify(data)
 			});
+		},
+		getTags: function(id, data) {
+			return crRequest(cleverreach, {
+				uri: cleverreach.url + 'receivers.json/' + id + '/tags?' + queryString.stringify(data)
+			});
 		}
 	};
 };
