@@ -7,14 +7,14 @@
 ## Install
 
 ```
-$ npm install --save cleverreach
+$ npm install --save cleverreach-wrapper
 ```
 
 
 ## Usage
 
 ```js
-var CleverReach = require('cleverreach');
+var CleverReach = require('cleverreach-wrapper');
 
 // Login credentials
 var cr = new CleverReach({
