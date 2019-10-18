@@ -1,7 +1,7 @@
 {
-  "name": "cleverreach",
-  "version": "0.4.3",
-  "description": "Promise based npm module for using CleverReach API",
+  "name": "cleverreach-wrapper",
+  "version": "0.4.4",
+  "description": "Wrapper for the CleverReach REST API",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
@@ -10,13 +10,12 @@
     "api",
     "cleverreach",
     "mailing",
-    "newsletter"
   ],
   "repository": {
     "type": "git",
     "url": "https://www.github.com/4wdmedia/cleverreach"
   },
-  "author": "Michel Gotta <michel.gotta@4wdmedia.de> (http://github.com/michelgotta)",
+  "author": "Andreas Steiner <andy.gigagamor@gmail.com> (https://github.com/AndreasSteiner)",
   "license": "MIT",
   "dependencies": {
     "deep-extend": "^0.6.0",
