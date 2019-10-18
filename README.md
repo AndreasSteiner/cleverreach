@@ -81,6 +81,8 @@ Here is a list of all implemented functions:
 #### .groups().getStats(id)
 #### .groups().create(name)
 #### .groups().createReceiver(id, data)
+#### .groups().createReceivers(id, data)
+#### .groups().deleteReceiver(groupId, receiverId)
 #### .groups().delete(id)
 
 ### Receivers
@@ -89,6 +91,7 @@ Here is a list of all implemented functions:
 #### .receivers().getEvents(id, data)
 #### .receivers().getOrders(id, data)
 #### .receivers().getAttributes(id, data)
+#### .receivers().getTags(id, data)
 
 ### Reports
 
