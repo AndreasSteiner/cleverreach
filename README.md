@@ -1,4 +1,4 @@
-# cleverreach
+# cleverreach-wrapper
 
 > Promise based npm module for using [CleverReach REST API](https://rest.cleverreach.com/explorer/)
 
