@@ -14,6 +14,11 @@ module.exports = function() {
 				uri: cleverreach.url + 'receivers.json/' + id + '/events?' + queryString.stringify(data)
 			});
 		},
+		getGroups: function(id, data) {
+			return crRequest(cleverreach, {
+				uri: cleverreach.url + 'receivers.json/' + id + '/groups?' + queryString.stringify(data)
+			});
+		},
 		getOrders: function(id, data) {
 			return crRequest(cleverreach, {
 				uri: cleverreach.url + 'receivers.json/' + id + '/orders?' + queryString.stringify(data)
@@ -28,6 +33,38 @@ module.exports = function() {
 			return crRequest(cleverreach, {
 				uri: cleverreach.url + 'receivers.json/' + id + '/tags?' + queryString.stringify(data)
 			});
-		}
+		},
+		createEvent: function(id, data) {			
+			return crRequest(cleverreach, {
+				method: 'POST',
+				uri: cleverreach.url + 'receivers.json/' + id + '/events',
+				body: data,
+				json: true
+			});
+		},
+		createOrder: function(id, data) {			
+			return crRequest(cleverreach, {
+				method: 'POST',
+				uri: cleverreach.url + 'receivers.json/' + id + '/orders',
+				body: data,
+				json: true
+			});
+		},
+		createTag: function(id, data) {			
+			return crRequest(cleverreach, {
+				method: 'POST',
+				uri: cleverreach.url + 'receivers.json/' + id + '/tags',
+				body: data,
+				json: true
+			});
+		},
+		checkValid: function(data) {			
+			return crRequest(cleverreach, {
+				method: 'POST',
+				uri: cleverreach.url + 'receivers/isvalid.json',
+				body: data,
+				json: true
+			});
+		},
 	};
 };

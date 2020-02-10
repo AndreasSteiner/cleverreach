@@ -57,7 +57,7 @@ cr.mailings().create(newMailing).then(function(mailing) {
 
 ## API
 
-You find detailed infos about the CleverReach REST API [here](https://rest.cleverreach.com/explorer/)
+You find detailed infos about the CleverReach REST API [here](https://rest.cleverreach.com/explorer/v2)
 
 Here is a list of all implemented functions:
 
@@ -92,6 +92,10 @@ Here is a list of all implemented functions:
 #### .receivers().getOrders(id, data)
 #### .receivers().getAttributes(id, data)
 #### .receivers().getTags(id, data)
+#### .receivers().createEvent(id, data)
+#### .receivers().createOrder(id, data)
+#### .receivers().createTag(id, data)
+#### .receivers().checkValid(data)
 
 ### Reports
 
